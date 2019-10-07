@@ -1,4 +1,5 @@
 import React from 'react';
+import './Card.css';
 
 /*
  * <div class="Card">
@@ -8,7 +9,7 @@ import React from 'react';
  *</div>
  */
 
-const Card = function(props) {
+const Card = function (props) {
   return (
     <div className='Card'>
       <button type='button'>delete</button>

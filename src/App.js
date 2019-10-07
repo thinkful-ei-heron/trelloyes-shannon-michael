@@ -1,5 +1,6 @@
 import React from 'react';
 import List from './List';
+import './App.css';
 
 function App(props) {
 /**
@@ -17,7 +18,7 @@ function App(props) {
       let cardId = list.cardIds[j];
       cards.push(props.store.allCards[cardId]);
     }
-    listsJsxArr.push(<List header={header} cards={cards} />);
+    listsJsxArr.push(<List header={header} cards={cards} key={'list' + i} />);
   }
 
   return (
