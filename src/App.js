@@ -19,8 +19,6 @@ function App(props) {
     }
     listsJsxArr.push(<List header={header} cards={cards} />);
   }
-  let listsJsx = listsJsxArr.join('\n');
-
 
   return (
     <main className='App'>
@@ -28,7 +26,7 @@ function App(props) {
         <h1>Trelloyes!</h1>
       </header>
       <div className = 'App-list'>
-        {listsJsx}
+        {listsJsxArr}
       </div>
     </main>
   );

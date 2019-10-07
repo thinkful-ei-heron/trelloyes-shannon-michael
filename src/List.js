@@ -15,14 +15,14 @@ import Card from './Card';
  */
 
  const List = function(props) {
-   let cardsMarkup = props.cards.map(card => <Card Title = {card.title} Content = {card.content}/>).join('\n');
+   let cards = props.cards.map(card => <Card title = {card.title} content = {card.content}/>);
    return (
      <section className = 'List'>
        <header className = 'List-header'>
          <h2>{props.header}</h2>
        </header>
        <div className='List-cards'>
-         {cardsMarkup}
+         {cards}
          <button type='button' className='List-add-button'>
            + Add Random Card
          </button>
